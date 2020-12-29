@@ -1,0 +1,16 @@
+{
+
+  "theme": {
+    "slug": "wp-rig",
+    "name": "WP Rig",
+    "author": "GROUP 7"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "localhost:8080/u3a",
+      "bypassPort": "8181",
+      "https": false
+    }
+  }
+}
