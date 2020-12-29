@@ -8,7 +8,7 @@
   "dev": {
     "browserSync": {
       "live": true,
-      "proxyURL": "localhost:8080/u3a",
+      "proxyURL": "localhost/assessment-2-GyapanJCU/",
       "bypassPort": "8181",
       "https": false
     }
