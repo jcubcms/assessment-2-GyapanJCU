@@ -16,6 +16,8 @@ namespace WP_Rig\WP_Rig;
 
 get_header();
 
+//get_template_part( 'template-parts/content/front-page' );
+
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
@@ -40,5 +42,10 @@ wp_rig()->print_styles( 'wp-rig-content' );
 		?>
 	</main><!-- #primary -->
 <?php
-get_sidebar();
-get_footer();
+
+if(!is_front_page()){
+	get_sidebar();
+	get_footer();
+}
+else
+	get_footer();
