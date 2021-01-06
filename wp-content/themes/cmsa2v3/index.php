@@ -43,9 +43,9 @@ cmsa2v3()->print_styles( 'cmsa2v3-content' );
 	</main><!-- #primary -->
 <?php
 
-if(!is_front_page()){
+//if(!is_front_page()){
 	get_sidebar();
 	get_footer();
-}
-else
-	get_footer();
+//}
+//else
+	//get_footer();

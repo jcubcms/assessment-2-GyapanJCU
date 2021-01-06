@@ -64,3 +64,9 @@ require get_template_directory() . '/inc/functions.php';
 
 // Initialize the theme.
 call_user_func( 'WP_Rig\WP_Rig\cmsa2v3' );
+
+//REMOVE ARCHIVE WORDPRESS 
+add_filter('get_the_archive_title', 'devvn_get_the_archive_title', 99);
+function devvn_get_the_archive_title($title) {
+return preg_replace('/.+: /', '', $title);
+}
