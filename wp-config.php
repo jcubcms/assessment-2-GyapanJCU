@@ -64,7 +64,11 @@ define( 'NONCE_SALT',       '03KW8tU[rMm4]1_xOR^7lXSq2*l9:1<R%T=!VoNr9G;5w*7q$C}
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'wp_';
-
+@ini_set( 'upload_max_filesize' , '512M' );
+@ini_set( 'post_max_size', '512M');
+@ini_set( 'memory_limit', '512M' );
+@ini_set( 'max_execution_time', '300' );
+@ini_set( 'max_input_time', '300' );
 /**
  * For developers: WordPress debugging mode.
  *
